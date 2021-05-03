@@ -2,7 +2,7 @@ import serial
 import time
 import csv
 
-ser = serial.Serial('/dev/ttyACM0')
+ser = serial.Serial('/dev/ttyUSB0')
 ser.flushInput()
 
 while True:

@@ -4,7 +4,7 @@ void setup(){
 }
 
 void loop(){
-    Serial.println(1);
+    Serial.println("gamer");
     delay(200);
     Serial.println(0);
 }
