@@ -26,7 +26,10 @@ def sendMessageTo(targetBluetoothMacAddress):
 def lookUpNearbyBluetoothDevices():
   nearby_devices = bluetooth.discover_devices()
   for bdaddr in nearby_devices:
-    print str(bluetooth.lookup_name( bdaddr )) + " [" + str(bdaddr) + "]"
+    if " [" + str(bdaddr) + "]" == " [E0:CC:F8:AD:3A:F8]":
+	return True
+    else:
+	return False
     
     
 lookUpNearbyBluetoothDevices()
